@@ -22,7 +22,7 @@ class Plan: #isi class Plan harus sama banyak dengan isi jenis plan
         ["Can stream", u'\u2713' if self.can_stream else "-"], #u'\u2713' if ... else "-" cetak centang
         ["Can download", u'\u2713' if self.can_download else "-"],
         ["Has SD", u'\u2713' if self.has_sd else "-"],
-        ["HAS HD", u'\u2713' if self.has_hd else "-"],
+        ["Has HD", u'\u2713' if self.has_hd else "-"],
         ["Has UHD", u'\u2713' if self.has_uhd else "-"],
         ["Number of device", self.num_devices],
         ["Available content", self.content],
