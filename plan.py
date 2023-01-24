@@ -18,8 +18,8 @@ class Plan: #isi class Plan harus sama banyak dengan isi jenis plan
   def check_plan(self):
     data = [
         ["Service", ""],
-        ["Plan name", u'\u2713' if self.plan_name else "-"], #u'\u2713' if ... else "-" cetak centang
-        ["Can stream", u'\u2713' if self.can_stream else "-"],
+        ["Plan name", self.plan_name], 
+        ["Can stream", u'\u2713' if self.can_stream else "-"], #u'\u2713' if ... else "-" cetak centang
         ["Can download", u'\u2713' if self.can_download else "-"],
         ["Has SD", u'\u2713' if self.has_sd else "-"],
         ["HAS HD", u'\u2713' if self.has_hd else "-"],
@@ -37,6 +37,7 @@ class Plan: #isi class Plan harus sama banyak dengan isi jenis plan
       #data.append(["Can stream", "-"])
 
     print(tabulate(data, headers="firstrow")) #baris pertama pada nilai data dijadikan header
+
 
 basic_plan = Plan(
     can_stream=True,
