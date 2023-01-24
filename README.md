@@ -1,3 +1,3 @@
-##PacFlix
+PacFlix
 
 Repository for PacFlix Development
